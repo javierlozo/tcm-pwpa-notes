@@ -1,7 +1,28 @@
 # Vulnerable Components
 
-> Course module: Other Common Vulnerabilities → Introduction to Vulnerable Components
-> OWASP Top 10: A06 - Vulnerable and Outdated Components
+> **Course module:** Other Common Vulnerabilities → Introduction to Vulnerable Components
+> **OWASP Top 10:** A06 - Vulnerable and Outdated Components
+
+## Cheat sheet
+
+Bugs in libraries I didn't write. They reach me through transitive deps in any package manager.
+
+**Detect:**
+
+- `npm audit --production` (Node — only runtime deps)
+- `pip-audit` (Python), `bundler-audit` (Ruby), `composer audit` (PHP)
+- GitHub Dependabot — free on public repos, auto-scans + auto-PRs
+- `osv-scanner` (Google) — cross-ecosystem
+- Look for exposed lockfiles: `package-lock.json`, `Gemfile.lock`, `composer.lock`, `go.sum`
+
+**Fix:**
+
+- `npm audit fix` for safe minor/patch bumps
+- `npm audit fix --force` for breaking major bumps (carefully)
+- `overrides` in `package.json` to force a transitive dep version when the parent hasn't updated
+- Replace abandoned packages with maintained alternatives
+
+**As an attacker:** version banners (`Server:`, `X-Powered-By:`), CDN library versions in HTML, exposed lockfiles. Then `snyk.io/vuln`, `github.com/advisories`, `nvd.nist.gov` for known PoCs.
 
 ## My version
 

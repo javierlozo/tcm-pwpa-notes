@@ -4,7 +4,59 @@ My study notes for the [TCM Security Practical Bug Bounty](https://academy.tcm-s
 
 I'm writing these as I go. Plain markdown, my own words, dated commits. Public so other learners can use them and so my prep is visible.
 
-— Luis Javier Lozoya · [luislozoya.com](https://www.luislozoya.com) · [github.com/Javierlozo](https://github.com/Javierlozo)
+— Luis Javier Lozoya · [luislozoya.com/notes](https://www.luislozoya.com/notes) · [github.com/Javierlozo](https://github.com/Javierlozo)
+
+> **Currently studying:** 01 · Reconnaissance and Information Gathering
+> **Last updated:** May 8, 2026
+
+## Progress
+
+### 01 · Reconnaissance and Information Gathering
+- [x] [Fingerprinting Web Technologies](./01-recon/fingerprinting-web-technologies.md)
+- [x] [Directory Enumeration and Brute Forcing](./01-recon/directory-enumeration.md)
+- [ ] Subdomain Enumeration
+- [ ] Burp Suite Overview
+
+### 02 · Authentication and Authorization Attacks
+- [ ] Brute-force attacks
+- [ ] Attacking MFA
+- [ ] IDOR
+- [ ] APIs intro
+- [ ] Broken access control
+- [ ] Testing with Autorize
+
+### 03 · Injection Attacks
+- [ ] LFI / RFI
+- [ ] SQL injection (basic, blind, second-order)
+- [ ] XSS (reflected, stored)
+- [ ] Command injection (basic, blind)
+- [ ] SSTI
+- [ ] XXE
+- [ ] Insecure file uploads
+
+### 04 · Automated Tools
+- [ ] Automated scanners
+- [ ] Scripting and automation
+
+### 05 · Other Common Vulnerabilities
+- [x] [Vulnerable Components](./05-other-vulns/vulnerable-components.md) — found 4 CVEs in my own portfolio while writing this
+- [ ] CSRF (basic + token bypass)
+- [ ] SSRF (basic + blind)
+- [ ] Subdomain takeovers
+- [ ] Open redirects
+
+### 06 · Reporting
+- [ ] CVSS (parts 1 + 2)
+- [ ] Writing pentest reports
+- [ ] Vulnerability disclosure programs
+- [ ] Communicating with clients/triagers
+
+### 07 · Evasion Techniques
+- [ ] WAF identification and fingerprinting
+- [ ] Input validation bypass
+
+### Lab Writeups
+- [ ] First lab writeup coming once I complete one
 
 ## Sections
 
