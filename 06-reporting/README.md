@@ -10,8 +10,4 @@ How to write up what I find so it actually gets fixed.
 - Communicating with clients and triagers
 - Common mistakes from a triager's perspective
 
-## Templates
-
-- [reporting-template.md](./reporting-template.md) — finding template I fill in per issue.
-
 Files go in here as I cover each lecture.
